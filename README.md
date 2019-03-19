@@ -14,6 +14,11 @@ python install_python.py
   在settings.py的Middleware中添加： utils.SSOAuthenticationMiddleware.SSOAuthenticationMiddleware即可
 
 ```
+> sdbm-hash Python实现
+```bash
+  验证HAproxy的分发规则： 对agent的hostid取sdbm-hash，然后求mod(2)
+```
+
 > django-session自定义长度
 ```bash
   在settings.py中添加：  SESSION_ENGINE = '自定义session认证后端的位置(精确到文件即可)'
