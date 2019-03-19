@@ -14,3 +14,9 @@ python install_python.py
   在settings.py的Middleware中添加： utils.SSOAuthenticationMiddleware.SSOAuthenticationMiddleware即可
 
 ```
+> django-session自定义长度
+```bash
+  在settings.py中添加：  SESSION_ENGINE = '自定义session认证后端的位置(精确到文件即可)'
+  数据库中添加新的Session表, 执行： python manage.py makemigrations ; python manage.py migrate 
+  
+```
