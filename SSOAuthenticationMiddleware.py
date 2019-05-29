@@ -9,8 +9,8 @@ from django.contrib.auth.models import User
 from django.utils.deprecation import MiddlewareMixin
 from django.contrib.sessions.models import Session
 
-SSO_LOGIN_URL = "http://www.ctyun.cn/login"
-SSO_VALID_URL = "http://www.ctyun.cn/serviceValidate"
+SSO_LOGIN_URL = "xxx"
+SSO_VALID_URL = "xxxx"
 
 
 class SSOAuthenticationMiddleware(MiddlewareMixin):
