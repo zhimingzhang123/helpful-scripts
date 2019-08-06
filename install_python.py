@@ -29,9 +29,10 @@ def setUp(version):
 	time.sleep(1)
 	subprocess.Popen("""echo "alias pip3='%s'">> ~/.bashrc"""%pip_path, shell=True)
 	
-	subprocess.Popen('source ~/.bashrc', shell=True, executable="/bin/bash")
+	#subprocess.Popen('source ~/.bashrc', shell=True, executable="/bin/bash")
+        os.system('source ~/.bashrc')
 
-	print('Now you can use `pyhton3` enter it \nyou can use `pip3` install packages')
+	print('Now you can use `python3` enter it \nyou can use `pip3` install packages')
 
 if __name__ == '__main__':
 	print('Please input the version to install pyhton: \n(example: if you want install pyhton3.4 you can input 34)')
